@@ -1,0 +1,625 @@
+{
+    "order": [
+         {
+      "booking_id": "01HQMDLN2JCFMXP127D39NQCFM",
+      "user_id": "98765432-1a0b-1c2d-3e4f-567890abcdef",
+      "coolie_asigned": [
+        {
+          "coolie_id": "fedcba09-8765-4321-abcd-efgh12345678",
+          "name": "John Doe",
+          "rating": 4.8
+        }
+      ],
+      "quoted_amount": 250,
+      "luggage": {
+        "number_of_bags": 2,
+        "types": ["suitcase", "duffel bag"]
+      },
+      "selected_time": "13:00",
+      "selected_station": "MGS",
+      "train_no": "12345",
+      "booking_recieved_at": "May 15, 2024 12:30:00", 
+      "current_status": {
+        "status": "Modified",
+        "modified_at": "May 15, 2024 13:05:00", 
+        "amount_collected": 270,
+        "payment_mode": "UPI",
+        "status_history": [
+          {
+            "status": "Order Received",
+            "timestamp": "May 15, 2024 12:30:00" 
+          },
+          {
+            "status": "Accepted by Coolie",
+            "timestamp": "May 15, 2024 12:45:00" 
+          },
+          {
+            "status": "Order Started",
+            "timestamp": "May 15, 2024 13:00:00" 
+          },
+          {
+            "status": "Order Nearing Destination",
+            "timestamp": "May 15, 2024 13:10:00" 
+          },
+          {
+            "status": "Order Completed",
+            "timestamp": "May 15, 2024 13:15:00", 
+            "amount_collected": 270,
+            "payment_mode": "UPI"
+          }
+        ]
+      }
+  },
+        {
+            "booking_id": "01HQMGLN2JCFMXP127D49NQCFM",
+            "user_id": "fedcba09-8765-4321-abcd-efgh12345678",
+            "coolie_asigned": [],
+            "quoted_amount": null,
+            "luggage": null,
+            "selected_time": null,
+            "selected_station": null,
+            "train_no": null,
+            "current_status":
+            {
+                "status": "Failure",
+                "reason": "Invalid Order"
+            }
+        },
+     {
+  "booking_id": "T7UVWXYN2JCFMXP127D59NQCFM", 
+  "user_id": "01234567-89ab-cdef-ghijkl-mnopqrstuvwx",
+  "coolie_asigned": [
+    {
+      "coolie_id": "1qazwsx-edcvfrt-gbnhjym-okpl",
+      "name": "Jane Doe",
+      "rating": 4.7
+    }
+  ],
+  "quoted_amount": 300,
+  "luggage": {
+    "number_of_bags": 3,
+    "types": ["suitcase", "duffel bag", "backpack"]
+  },
+  "selected_time": "13:10",
+  "selected_station": "DDU",
+  "train_no": null,
+  "status_history": [
+    {
+      "status": "Order Received",
+      "timestamp": "May 15, 2024 10:00:00"
+    },
+    {
+      "status": "Selected Time",
+      "timestamp": "May 15, 2024 13:10:00" 
+    },
+    {
+      "status": "Order Started",
+      "timestamp": "May 15, 2024 13:10:00" 
+    },
+    {
+      "status": "Completed",
+      "timestamp": "May 15, 2024 13:30:00"
+    }
+  ]
+}
+,
+        {
+            "booking_id": "asdfghjkl-1234-5678-90ab-cdefghijklmn",
+            "user_id": "09876543-zyxw-vuts-rqpo-nmlabcdef",
+            "coolie_asigned": [
+            {
+                "coolie_id": "1qazwsx-edcvfrt-gbnhjym-okpl",
+                "name": "Jane Doe",
+                "rating": 4.5
+            }],
+            "assigned_coolie_id": "1qazwsx-edcvfrt-gbnhjym-okpl",
+            "quoted_amount": 450,
+            "luggage":
+            {
+                "number_of_bags": 2,
+                "types": ["suitcase", "duffel bag"]
+            },
+            "selected_station": "NJP",
+            "train_no": "5678",
+            "current_status":
+            {
+                "status": "Awaiting",
+                "modification_requests": [
+                {
+                    "modified_field": "selected_time",
+                    "original_value": "16:00",
+                    "new_value": "17:00",
+                    "reason": "Train delay due to bad weather",
+                    "approved": true
+                },
+                {
+                    "modified_field": "selected_time",
+                    "original_value": "17:00",
+                    "new_value": "18:00",
+                    "reason": "Further train delay due to bad weather",
+                    "approved": false
+                }],
+
+                "timestamp": "2024-04-12T18:23:00Z"
+            }
+        },
+        {
+            "booking_id": "123e4567-e89b-12d3-a456-426614174000",
+            "user_id": "98765432-1a0b-1c2d-3e4f-567890abcdef",
+            "coolie_asigned": [
+            {
+                "coolie_id": "fedcba09-8765-4321-abcd-efgh12345678",
+                "name": "John Doe",
+                "rating": 4.8
+            }],
+            "assigned_coolie_id": "fedcba09-8765-4321-abcd-efgh12345678",
+            "quoted_amount": 300,
+            "luggage":
+            {
+                "number_of_bags": 2,
+                "types": ["suitcase", "duffel bag"]
+            },
+            "selected_time": "13:00",
+            "selected_station": "MGS",
+            "train_no": "12345",
+            "current_status":
+            {
+                "status": "Dispute",
+                "dispute_raised_by": [
+                    "Coolie",
+                    "Passenger"
+                ],
+                "dispute_reasons":
+                {
+                    "Coolie": "Wrong luggage selected",
+                    "Passenger": "Wrong amount quoted, coolie arguing"
+                },
+                "dispute_details":
+                {
+                    "timestamp": "2024-04-12T17:45:00Z",
+                    "communication_history": [],
+                    "evidence": [],
+                    "stage": "Pending Resolution"
+                }
+            }
+        },
+        {
+            "booking_id": "98765432-abcd-efgh-ijkl-mnopqrstuvwx",
+            "user_id": "12345678-zyxw-vuts-rqpo-nmlabcdef",
+            "coolie_asigned": [
+            {
+                "coolie_id": "fedcba09-8765-4321-abcd-efgh12345678",
+                "name": "John Doe",
+                "rating": 4.8
+            }],
+            "assigned_coolie_id": "fedcba09-8765-4321-abcd-efgh12345678",
+            "quoted_amount": 320,
+            "luggage":
+            {
+                "number_of_bags": 3,
+                "types": ["suitcase", "duffel bag", "backpack"]
+            },
+            "selected_time": "11:00",
+            "selected_station": "HWH",
+            "train_no": "3456",
+            "current_status":
+            {
+                "status": "In Progress",
+                "reached_dropped_location": true,
+                "payment_pending": true
+            }
+        },
+        {
+            "booking_id": "zxcvbnml-9876-5432-10ab-cdefghijklmn",
+            "user_id": "01234567-89ab-cdef-ghijkl-mnopqrstuvwx",
+            "coolie_asigned": [
+            {
+                "coolie_id": "1qazwsx-edcvfrt-gbnhjym-okpl",
+                "name": "Jane Doe",
+                "rating": 4.7
+            }],
+            "quoted_amount": 300,
+            "luggage":
+            {
+                "number_of_bags": 3,
+                "types": ["suitcase", "duffel bag", "backpack"]
+            },
+            "selected_time": "16:40",
+            "selected_station": "BBS",
+            "train_no": null,
+            "current_status":
+            {
+                "status": ["Modified", "Completed"],
+                "completed_at": "17:00",
+                "amount_collected": 300,
+                "payment_mode": "Cash on Delivery"
+            },
+            "modification_requests": [
+            {
+                "modified_field": "booking_station",
+                "original_value": "DDU",
+                "new_value": "BBS"
+            },
+            {
+                "modified_field": "selected_time",
+                "original_value": "13:10",
+                "new_value": "16:40"
+            }]
+        },
+        {
+            "booking_id": "wxyz1234-5678-90ab-cdef-ghijklmnop",
+            "user_id": "78901234-cdef-ghij-klmn-opqrstuvw",
+            "coolie_asigned": [
+            {
+                "coolie_id": "abcd5678-efgh-ijkl-mnop-qrstuvwx",
+                "name": "John Doe",
+                "rating": 4.8
+            }],
+            "assigned_coolie_id": "abcd5678-efgh-ijkl-mnop-qrstuvwx",
+            "quoted_amount": 275,
+            "luggage":
+            {
+                "number_of_bags": 1,
+                "types": ["briefcase"]
+            },
+            "selected_time": "14:30",
+            "selected_station": "CSTM",
+            "train_no": "9876",
+            "current_status":
+            {
+                "status": "Awaiting",
+                "assigned_at": "14:20"
+            }
+        },
+        {
+            "booking_id": "zxcvbnml-9876-5432-10ab-cdefghijklmn",
+            "user_id": "01234567-89ab-cdef-ghijkl-mnopqrstuvwx",
+            "cancellation_requested": true,
+            "cancellation_approved": true,
+            "coolie_asigned": [
+            {
+                "coolie_id": "fedcba09-8765-4321-abcd-efgh12345678",
+                "name": "John Doe",
+                "rating": 4.8
+            }],
+            "assigned_coolie_id": "fedcba09-8765-4321-abcd-efgh12345678",
+            "quoted_amount": 200,
+            "luggage":
+            {
+                "number_of_bags": 1,
+                "types": ["briefcase"]
+            },
+            "selected_time": "10:30",
+            "selected_station": "NDLS",
+            "train_no": "1234",
+            "status": "CANCELLED"
+        },
+        {
+            "booking_id": "qwertyui-opasdf-ghjklzxcvbnm",
+            "user_id": "poiutrerty-fdsaghjkl-zxcvbnm",
+            "coolie_asigned": [
+            {
+                "coolie_id": "mnbvcxz-lkjhgfdsa-poiuytrewq",
+                "name": "John Doe",
+                "rating": 4.8
+            }],
+            "assigned_coolie_id": "mnbvcxz-lkjhgfdsa-poiuytrewq",
+            "quoted_amount": 380,
+            "luggage":
+            {
+                "number_of_bags": 2,
+                "types": ["suitcase", "backpack"]
+            },
+            "selected_time": "12:00",
+            "selected_station": "DDN",
+            "train_no": "9012",
+            "current_status":
+            {
+                "status": "Awaiting",
+                "reason": "Coolie initially accepted, now awaiting: 1. Reassignment to new coolie 2. Cancellation"
+            }
+        },
+        {
+            "booking_id": "qwertyui-opasdf-ghjklzxcvbnm",
+            "user_id": "poiutrerty-fdsaghjkl-zxcvbnm",
+            "past_coolies": [
+            {
+                "coolie_id": "mnbvcxz-lkjhgfdsa-poiuytrewq",
+                "name": "John Doe (Coolie Wale 1)",
+                "rating": 4.8,
+                "cancellation_reason": "Health Issues"
+            }],
+            "assigned_coolie_id": "xyzpdqabc-efghijkmn-opqrstuvwx",
+            "quoted_amount": 380,
+            "luggage":
+            {
+                "number_of_bags": 2,
+                "types": ["suitcase", "backpack"]
+            },
+            "selected_time": "12:00",
+            "selected_station": "DDN",
+            "train_no": "9012",
+            "service_events": [
+            {
+                "timestamp": "2024-04-12 11:00:00",
+                "event_type": "Order Placed",
+                "assigned_coolie_id": "mnbvcxz-lkjhgfdsa-poiuytrewq"
+            },
+            {
+                "timestamp": "2024-04-12 11:30:00",
+                "event_type": "Coolie Cancellation",
+                "cancelled_coolie_id": "mnbvcxz-lkjhgfdsa-poiuytrewq"
+            },
+            {
+                "timestamp": "2024-04-12 11:45:00",
+                "event_type": "Coolie Reassignment",
+                "assigned_coolie_id": "xyzpdqabc-efghijkmn-opqrstuvwx"
+            },
+            {
+                "timestamp": "2024-04-12 12:15:00",
+                "event_type": "Service Completed"
+            }]
+        },
+        {
+            "booking_id": "123e4567-e89b-12d3-a456-426614174000",
+            "user_id": "98765432-1a0b-1c2d-3e4f-567890abcdef",
+            "coolie_asigned": [
+            {
+                "coolie_id": "fedcba09-8765-4321-abcd-efgh12345678",
+                "name": "John Doe",
+                "rating": 4.8
+            }],
+            "quoted_amount": 250,
+            "luggage":
+            {
+                "number_of_bags": 2,
+                "types": ["suitcase", "duffel bag"]
+            },
+            "selected_time": "13:00",
+            "selected_station": "MGS",
+            "train_no": "12345",
+            "current_status":
+            {
+                "status": "Completed",
+                "completed_at": "13:15",
+                "amount_collected": 250,
+                "payment_mode": "UPI"
+            }
+        },
+        {
+            "booking_id": "qwertyui-opasdf-ghjklzxcvbnm",
+            "user_id": "poiutrerty-fdsaghjkl-zxcvbnm",
+            "past_coolies": [
+            {
+                "coolie_id": "mnbvcxz-lkjhgfdsa-poiuytrewq",
+                "name": "John Doe",
+                "rating": 4.8,
+                "cancellation_reason": "Emergency work"
+            }],
+            "coolie_asigned": [],
+            "assigned_coolie_id": null,
+            "quoted_amount": 380,
+            "luggage":
+            {
+                "number_of_bags": 2,
+                "types": ["suitcase", "backpack"]
+            },
+            "selected_time": "12:00",
+            "selected_station": "DDN",
+            "train_no": "9012",
+            "current_status":
+            {
+                "status": "Pending",
+                "reason": "New coolie accepted request, proposed new time: 12:10"
+            },
+            "reassignment_details":
+            {
+                "new_coolie_id": "xyzpdqabc-efghijkmn-opqrstuvwx",
+                "new_coolie_name": "Jane Doe",
+                "new_coolie_rating": 4.7
+            }
+        },
+        {
+            "booking_id": "123e4567-e89b-12d3-a456-426614174000",
+            "user_id": "98765432-1a0b-1c2d-3e4f-567890abcdef",
+            "coolie_asigned": [
+            {
+                "coolie_id": "fedcba09-8765-4321-abcd-efgh12345678",
+                "name": "John Doe",
+                "rating": 4.8
+            }],
+            "assigned_coolie_id": "fedcba09-8765-4321-abcd-efgh12345678",
+            "quoted_amount": 300,
+            "luggage":
+            {
+                "number_of_bags": 2,
+                "types": ["suitcase", "duffel bag"]
+            },
+            "selected_time": "13:00",
+            "selected_station": "MGS",
+            "train_no": "12345",
+            "current_status":
+            {
+                "status": "Dispute",
+                "dispute_raised_by": [
+                    "Coolie",
+                    "Passenger"
+                ],
+                "dispute_reasons":
+                {
+                    "Coolie": "Wrong luggage selected",
+                    "Passenger": "Wrong amount quoted, coolie arguing"
+                }
+            }
+        },
+        {
+            "booking_id": "456789ab-cdef-ghij-klmn-opqrstuvwx",
+            "user_id": "ghijklmn-opqrst-uvwxyz-0123456789",
+            "coolie_asigned": [
+            {
+                "coolie_id": "01234567-89ab-cdef-ghij-klmnopqrst",
+                "name": "Jane Doe",
+                "rating": 4.5
+            }],
+            "assigned_coolie_id": "01234567-89ab-cdef-ghij-klmnopqrst",
+            "quoted_amount": 250,
+            "luggage":
+            {
+                "number_of_bags": 2,
+                "types": ["suitcase", "duffel bag"]
+            },
+            "selected_time": "15:00",
+            "selected_station": "CST",
+            "train_no": "7890",
+            "current_status":
+            {
+                "status": "Dispute",
+                "dispute_raised_by": [
+                    "Coolie",
+                    "Passenger"
+                ],
+                "dispute_reasons":
+                {
+                    "Coolie": "Theft",
+                    "Passenger": "Theft"
+                },
+                "SOS_raised_by": "Coolie Union"
+            }
+        },
+        {
+            "booking_id": "zxcvbnm-asdfghjkl-poiuytrewq-mnbvcxz",
+            "user_id": "qwertyui-opasdf-ghjkl-zxcvbnm",
+            "assigned_coolie_id": "poiutrerty-fdsaghjkl-zxcvbnm",
+            "quoted_amount": 420,
+            "luggage":
+            {
+                "number_of_bags": 1,
+                "types": ["suitcase"]
+            },
+            "selected_time": "10:30",
+            "selected_station": "CSVT",
+            "train_no": "5432",
+            "current_status":
+            {
+                "status": "Dispute",
+                "dispute_raised_by": "Passenger",
+                "dispute_reasons":
+                {
+                    "Passenger": "Luggage damage (suitcase)"
+                },
+                "resolution":
+                {
+                    "status": "Pending",
+                    "notes": "Waiting for coolie response"
+                }
+            }
+        },
+        {
+            "booking_id": "98765432-abcd-efgh-ijkl-mnopqrstuvwx",
+            "user_id": "12345678-zyxw-vuts-rqpo-nmlabcdef",
+            "coolie_asigned": [
+            {
+                "coolie_id": "fedcba09-8765-4321-abcd-efgh12345678",
+                "name": "John Doe",
+                "rating": 4.8
+            }],
+            "assigned_coolie_id": "fedcba09-8765-4321-abcd-efgh12345678",
+            "quoted_amount": 320,
+            "luggage":
+            {
+                "number_of_bags": 3,
+                "types": ["suitcase", "duffel bag", "backpack"]
+            },
+            "selected_time": "11:00",
+            "selected_station": "HWH",
+            "train_no": "3456",
+            "current_status":
+            {
+                "status": "In Progress",
+                "reached_dropped_location": true,
+                "payment_pending": true
+            }
+        },
+        {
+            "booking_id": "asdfghjkl-1234-5678-90ab-cdefghijklmn",
+            "user_id": "09876543-zyxw-vuts-rqpo-nmlabcdef",
+            "coolie_asigned": [
+            {
+                "coolie_id": "1qazwsx-edcvfrt-gbnhjym-okpl",
+                "name": "Jane Doe",
+                "rating": 4.7
+            }],
+            "assigned_coolie_id": "1qazwsx-edcvfrt-gbnhjym-okpl",
+            "quoted_amount": 450,
+            "luggage":
+            {
+                "number_of_bags": 2,
+                "types": ["suitcase", "duffel bag"]
+            },
+            "selected_station": "NJP",
+            "train_no": "5678",
+            "current_status":
+            {
+                "status": "Awaiting",
+                "modification_requests": [
+                {
+                    "modified_field": "selected_time",
+                    "original_value": "16:00",
+                    "new_value": "17:00",
+                    "reason": "Train delay due to bad weather"
+                },
+                {
+                    "modified_field": "selected_time",
+                    "original_value": "17:00",
+                    "new_value": "18:00",
+                    "reason": "Further train delay due to bad weather"
+                }]
+            }
+        },
+        {
+            "booking_id": "asdfghjkl-zxcvbnm-poiuytrewq",
+            "user_id": "mnbvcxz-lkjhgfdsa-qwertyui",
+            "coolie_asigned": [],
+            "assigned_coolie_id": null,
+            "quoted_amount": null,
+            "luggage": null,
+            "selected_time": "14:00",
+            "selected_station": "CSTM",
+            "train_no": "7890",
+            "current_status":
+            {
+                "status": "Pending",
+                "reason": "No coolie available yet"
+            },
+            "service_events": [
+            {
+                "timestamp": "2024-04-11 14:34:00",
+                "event_type": "Order Placed"
+            }]
+        },
+        {
+            "booking_id": "poiuytrewq-mnbvcxz-asdfghjkl-zxcvbnm",
+            "user_id": "opasdfghjkl-zxcvbnm-qwertyui",
+            "assigned_coolie_id": "fdsaghjkl-zxcvbnm-poiuytrewq",
+            "quoted_amount": 270,
+            "luggage":
+            {
+                "number_of_bags": 3,
+                "types": ["suitcase", "duffel bag", "backpack"]
+            },
+            "selected_time": "13:00",
+            "selected_station": "LTT",
+            "train_no": "3012",
+            "current_status":
+            {
+                "status": "Completed",
+                "payment":
+                {
+                    "total_amount": 320,
+                    "tip_amount": 50
+                }
+            }
+        }
+
+    ]
+}
